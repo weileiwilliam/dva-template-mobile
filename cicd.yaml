@@ -1,0 +1,16 @@
+deploy:
+  meta:
+    name: marco-frontend
+    owner: yufenfen
+  deployment:
+    port: 
+      - 80
+  ingress:
+    domainnames:
+      - namespace: dev
+        value: alpha-marco.aidigger.com
+      - namespace: production
+        value: marco.aidigger.com
+    options:
+      - 'ingress.kubernetes.io/proxy-body-size: 8m'
+    path: /
