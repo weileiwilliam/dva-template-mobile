@@ -9,7 +9,7 @@ module.exports = {
     app: './src/index.js',
     react: ['react', 'react-dom'],
     dva: 'dva',
-    antd: 'antd'
+    'antd-mobile': 'antd-mobile'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -139,7 +139,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Marco',
+      title: 'Dva Mobile Template',
       template: './index.ejs'
     })
   ]

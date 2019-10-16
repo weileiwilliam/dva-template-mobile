@@ -106,15 +106,16 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
+    host: '0.0.0.0',
     open: true,
     port: 8888,
     historyApiFallback: true,
     disableHostCheck: true,
     proxy: {
-      '/proxyToMarco': {
+      '/proxy': {
         target: 'https://alpha-marco.aidigger.com/',
         changeOrigin: true,
-        pathRewrite: { '/proxyToMarco': '' },
+        pathRewrite: { '/proxy': '' },
         headers: {
           'Access-Control-Allow-Origin': '*',
           withCredentials: true,
@@ -127,7 +128,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Marco',
+      title: 'Dva Mobile Template',
       template: './index.ejs'
     })
   ]
