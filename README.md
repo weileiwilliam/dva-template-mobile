@@ -1,2 +1,2 @@
-# dva template
+# dva template mobile
 
