@@ -18,7 +18,7 @@
     "dva": "^2.1.0",
     "dva-loading": "^1.0.4",
     "history": "^4.7.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "moment": "^2.22.2",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.2",
